@@ -1,0 +1,102 @@
+.workspace-layout { display: grid; min-height: 100vh; grid-template-columns: 248px minmax(0, 1fr); color: #1b2737; background: #f3f6fa; }
+.workspace-rail { display: flex; min-height: 100vh; flex-direction: column; padding: 20px 16px; border-right: 1px solid #dce4ed; background: #fff; }
+.workspace-brand { display: flex; min-height: 65px; align-items: center; gap: 10px; padding: 0 4px 15px; border-bottom: 1px solid #dce4ed; color: #152238; font-size: 20px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.workspace-brand strong { color: #178f5a; }
+.workspace-brand .brand-mark { width: 38px; height: 38px; flex-basis: 38px; border-radius: 12px; }
+.rail-label { margin: 22px 4px 12px; color: #75849a; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+.rail-nav { display: grid; gap: 5px; }
+.rail-link { display: flex; min-height: 43px; align-items: center; gap: 10px; padding: 0 12px; border-radius: 10px; color: #253247; font-size: 13px; text-decoration: none; }
+.rail-link > span { color: #8291a7; font-size: 16px; }
+.rail-link:hover, .rail-link.active { color: #148852; background: #e8f5ee; }
+.rail-link.active > span { color: #148852; }
+.workspace-body { min-width: 0; }
+.workspace-topbar { display: flex; min-height: 68px; align-items: center; justify-content: space-between; gap: 16px; padding: 0 28px; border-bottom: 1px solid #dce4ed; background: #fff; }
+.topbar-title { color: #182439; font-size: 18px; font-weight: 700; text-decoration: none; }
+.topbar-account { display: flex; align-items: center; gap: 13px; color: #66768d; font-size: 12px; }
+.topbar-account a { color: #52647d; text-decoration: none; }
+.topbar-account button, .text-button { padding: 0; border: 0; color: #178f5a; background: transparent; cursor: pointer; font-size: inherit; font-weight: 700; }
+.topbar-separator { color: #b3bfcd; }
+.workspace-main { min-width: 0; min-height: calc(100vh - 68px); padding: 25px 28px 60px; background: #f3f6fa; }
+.account-content { width: min(100%, 930px); margin: 0 auto; }
+.account-kicker { margin: 0 0 8px; color: #178f5a; font-size: 11px; font-weight: 700; letter-spacing: .045em; text-transform: uppercase; }
+.account-content h1, .workspace-welcome h1 { margin: 0; color: #1b2737; font-size: 27px; line-height: 1.25; letter-spacing: -.02em; }
+.account-subtitle { margin: 10px 0 16px; color: #7a899f; font-size: 13px; line-height: 1.55; }
+.workspace-main .card { border-color: #dbe4ee; border-radius: 15px; color: #1b2737; background: #fff; }
+.account-card { margin-top: 16px; padding: 20px 18px; }
+.account-form { display: grid; gap: 14px; }
+.account-form .field { gap: 7px; }
+.account-form .field label, .sports-fieldset legend { color: #172335; font-size: 12px; font-weight: 600; }
+.account-form .field input { width: 100%; min-height: 43px; border-color: #d5e0eb; border-radius: 9px; color: #1b2737; background: #fff; font-size: 13px; }
+.account-form .field input::placeholder { color: #91a0b4; }
+.account-form .field input:focus { border-color: #168e59; outline-color: #168e59; }
+.account-form .field small, .field-hint, .password-hint { margin: 0; color: #77869a; font-size: 11px; line-height: 1.5; }
+.account-form .field-error, .field-error-note { color: #b42318; }
+.field-error-note { margin: -7px 0 0; font-size: 12px; }
+.form-two-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.form-utility-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 12px; }
+.form-utility-row a, .form-bottom-copy a { color: #138b55; font-weight: 700; text-decoration: none; }
+.form-hint { color: #78879a; }
+.form-bottom-copy { margin: 0; color: #68788e; font-size: 12px; }
+.workspace-main .button-primary { color: #fff; background: #168f5a; }
+.workspace-main .button-primary:hover { background: #11784b; }
+.workspace-main .button-secondary { color: #157e50; background: #e9f5ee; }
+.workspace-main .button-secondary:hover { background: #d8eee2; }
+.account-form > .button { justify-self: start; min-width: 120px; min-height: 42px; border-radius: 9px; }
+.form-message { padding: 11px 13px; border: 1px solid; border-radius: 9px; font-size: 12px; line-height: 1.5; }
+.form-message-error { border-color: #f1c7c4; color: #8e211a; background: #fff2f1; }
+.form-message-success { border-color: #b8dfc9; color: #176a42; background: #eff9f2; }
+.role-choice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 16px 0; }
+.role-choice-card { padding: 22px; }
+.role-choice-icon { display: grid; width: 44px; height: 44px; place-items: center; border-radius: 13px; color: #14233a; background: #d5ff7a; font-size: 23px; }
+.role-choice-card h2, .workspace-card h2 { margin: 16px 0 8px; font-size: 17px; }
+.role-choice-card p, .workspace-card p { min-height: 42px; margin: 0 0 17px; color: #718096; font-size: 12px; line-height: 1.6; }
+.role-choice-card .button { min-height: 41px; padding-inline: 14px; }
+.sports-fieldset { display: grid; gap: 10px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.sports-fieldset legend { margin-bottom: 9px; }
+.sports-fieldset legend span { color: #8190a4; font-weight: 400; }
+.sport-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.sport-option { min-height: 35px; padding: 0 12px; border: 1px solid #d5e0eb; border-radius: 999px; color: #41526b; background: #fff; cursor: pointer; font-size: 12px; }
+.sport-option:hover { border-color: #168f5a; }
+.sport-option.selected { border-color: #168f5a; color: #126f45; background: #eaf6ef; }
+.password-hint { margin-top: -7px; }
+.notice-card { display: grid; gap: 12px; margin-top: 16px; padding: 22px; }
+.notice-card p { margin: 0; color: #586980; font-size: 13px; line-height: 1.7; }
+.notice-card .button { justify-self: start; }
+.profile-email { display: grid; gap: 4px; margin: 0; color: #24334a; font-size: 12px; }
+.profile-email span { color: #8795a8; font-size: 11px; }
+.loading-page { display: flex; min-height: 100vh; align-items: center; justify-content: center; gap: 12px; color: #5e6e83; background: #f3f6fa; font-size: 13px; }
+.loading-inline { color: #718096; font-size: 13px; }
+.loading-spinner { width: 18px; height: 18px; border: 2px solid #ccd6e2; border-top-color: #168f5a; border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.workspace-welcome { max-width: 900px; margin: 0 auto 22px; padding: 26px; border: 1px solid #dbe4ee; border-radius: 16px; background: #fff; }
+.workspace-welcome > p:not(.account-kicker) { max-width: 650px; margin: 12px 0 0; color: #718096; font-size: 13px; line-height: 1.7; }
+.workspace-cards { display: grid; max-width: 900px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0 auto; }
+.workspace-card { padding: 20px; }
+.workspace-card h2 { margin-top: 0; }
+.workspace-card .button { min-height: 40px; }
+.status-banner { display: grid; gap: 4px; margin-top: 20px; padding: 13px 15px; border: 1px solid #f0d49d; border-radius: 10px; color: #715216; background: #fff8e8; font-size: 12px; line-height: 1.55; }
+.status-banner span { color: #816c43; }
+.session-notice { position: relative; z-index: 2; padding: 10px 20px; color: #715216; background: #fff2cc; font-size: 12px; text-align: center; }
+@media (max-width: 760px) {
+  .workspace-layout { grid-template-columns: 1fr; }
+  .workspace-rail { min-height: 0; padding: 12px 16px 8px; border-right: 0; border-bottom: 1px solid #dce4ed; }
+  .workspace-brand { min-height: 46px; padding: 0 2px 9px; font-size: 18px; }
+  .workspace-brand .brand-mark { width: 30px; height: 30px; flex-basis: 30px; border-radius: 10px; }
+  .rail-label { margin: 11px 3px 7px; }
+  .rail-nav { display: flex; overflow-x: auto; gap: 5px; padding-bottom: 2px; }
+  .rail-link { min-height: 36px; flex: 0 0 auto; gap: 6px; padding-inline: 9px; font-size: 11px; }
+  .workspace-topbar { min-height: 56px; padding-inline: 18px; }
+  .topbar-title { font-size: 15px; }
+  .topbar-account { gap: 8px; font-size: 11px; }
+  .workspace-main { min-height: calc(100vh - 150px); padding: 21px 18px 44px; }
+  .account-content h1, .workspace-welcome h1 { font-size: 24px; }
+  .workspace-cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 500px) {
+  .workspace-topbar { align-items: flex-start; flex-direction: column; justify-content: center; gap: 5px; padding-block: 10px; }
+  .topbar-account { max-width: 100%; flex-wrap: wrap; }
+  .account-card { padding: 16px 13px; }
+  .form-two-columns, .role-choice-grid { grid-template-columns: 1fr; }
+  .role-choice-card p { min-height: 0; }
+  .form-utility-row { align-items: flex-start; flex-direction: column; }
+}

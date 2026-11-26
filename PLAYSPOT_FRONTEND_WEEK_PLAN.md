@@ -1,5 +1,4 @@
 # PlaySpot PK — React.js Web Frontend Week Plan
-
 **Project:** PlaySpot PK — Sports Venue Booking and Player Matchmaking Platform  
 **Frontend target:** React.js web application (responsive desktop and mobile browsers)  
 **Backend:** Existing Node.js/Express API in `FYP_PlaySpot_Node_JS_BE`  
